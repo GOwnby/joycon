@@ -10,6 +10,7 @@ from PIL import ImageTk, Image # Package used to add Image to GUI
 import matplotlib.backends.backend_tkagg # Package used to add Plot Graph to GUI
 import matplotlib.figure # Package used to add Plot Graph to GUI
 import ArduinoConnect # Package used for connecting to the Arduino
+import math
 
 # Run the above functions to get the COM port the Arduino is connected to
 serialConnection = ArduinoConnect.findArduino()
@@ -325,100 +326,100 @@ while 1:
 
     # Set the value of the Digital Input Buttons after the Digital Input data has been read
     try:
-        if serialDataB1 == 1.0:
+        if math.isclose(serialDataB1, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB1I.config(relief="sunken")
 
-        if serialDataB1 == 0.0:
+        if math.isclose(serialDataB1, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB1I.config(relief="raised")
 
-        if serialDataB2 == 1.0:
+        if math.isclose(serialDataB2, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB2I.config(relief="sunken")
 
-        if serialDataB2 == 0.0:
+        if math.isclose(serialDataB2, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB2I.config(relief="raised")
 
-        if serialDataB3 == 1.0:
+        if math.isclose(serialDataB3, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB3I.config(relief="sunken")
 
-        if serialDataB3 == 0.0:
+        if math.isclose(serialDataB3, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB3I.config(relief="raised")
 
-        if serialDataB4 == 1.0:
+        if math.isclose(serialDataB4, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB4I.config(relief="sunken")
 
-        if serialDataB4 == 0.0:
+        if math.isclose(serialDataB4, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB4I.config(relief="raised")
 
-        if serialDataB5 == 1.0:
+        if math.isclose(serialDataB5, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB5I.config(relief="sunken")
 
-        if serialDataB5 == 0.0:
+        if math.isclose(serialDataB5, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB5I.config(relief="raised")
 
-        if serialDataB6 == 1.0:
+        if math.isclose(serialDataB6, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB6I.config(relief="sunken")
 
-        if serialDataB6 == 0.0:
+        if math.isclose(serialDataB6, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB6I.config(relief="raised")
 
-        if serialDataB7 == 1.0:
+        if math.isclose(serialDataB7, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB7I.config(relief="sunken")
 
-        if serialDataB7 == 0.0:
+        if math.isclose(serialDataB7, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB7I.config(relief="raised")
 
-        if serialDataB8 == 1.0:
+        if math.isclose(serialDataB8, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB8I.config(relief="sunken")
 
-        if serialDataB8 == 0.0:
+        if math.isclose(serialDataB8, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB8I.config(relief="raised")
 
-        if serialDataB9 == 1.0:
+        if math.isclose(serialDataB9, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB9I.config(relief="sunken")
 
-        if serialDataB9 == 0.0:
+        if math.isclose(serialDataB9, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB9I.config(relief="raised")
 
-        if serialDataB10 == 1.0:
+        if math.isclose(serialDataB10, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB10I.config(relief="sunken")
 
-        if serialDataB10 == 0.0:
+        if math.isclose(serialDataB10, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB10I.config(relief="raised")
 
-        if serialDataB11 == 1.0:
+        if math.isclose(serialDataB11, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB11I.config(relief="sunken")
 
-        if serialDataB11 == 0.0:
+        if math.isclose(serialDataB11, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB11I.config(relief="raised")
 
-        if serialDataB12 == 1.0:
+        if math.isclose(serialDataB12, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB12I.config(relief="sunken")
 
-        if serialDataB12 == 0.0:
+        if math.isclose(serialDataB12, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB12I.config(relief="raised")
 
-        if serialDataB13 == 1.0:
+        if math.isclose(serialDataB13, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB13I.config(relief="sunken")
 
-        if serialDataB13 == 0.0:
+        if math.isclose(serialDataB13, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB13I.config(relief="raised")
 
-        if serialDataB14 == 1.0:
+        if math.isclose(serialDataB14, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB14I.config(relief="sunken")
 
-        if serialDataB14 == 0.0:
+        if math.isclose(serialDataB14, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB14I.config(relief="raised")
 
-        if serialDataB15 == 1.0:
+        if math.isclose(serialDataB15, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB15I.config(relief="sunken")
 
-        if serialDataB15 == 0.0:
+        if math.isclose(serialDataB15, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB15I.config(relief="raised")
 
-        if serialDataB16 == 1.0:
+        if math.isclose(serialDataB16, 1.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB16I.config(relief="sunken")
 
-        if serialDataB16 == 0.0:
+        if math.isclose(serialDataB16, 0.0, rel_tol=1e-09, abs_tol=0.0):
             buttonB16I.config(relief="raised")
     except Exception:
         pass
